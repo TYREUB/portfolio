@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tyreub — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="galaxy-bg"></canvas>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo-wrap" aria-label="Accueil">
+        <div class="logo-badge">T</div>
+        <h1 class="logo">Tyreub</h1>
+      </a>
+
+      <nav class="site-nav">
+        <a class="nav-link" href="#about">À propos</a>
+        <a class="nav-link" href="#skills">Compétences</a>
+        <a class="nav-link" href="#projects">Projets</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- mobile overlay -->
+    <div class="mobile-overlay" aria-hidden="true">
+      <nav class="mobile-nav">
+        <a class="mobile-link" href="#about">À propos</a>
+        <a class="mobile-link" href="#skills">Compétences</a>
+        <a class="mobile-link" href="#projects">Projets</a>
+        <a class="mobile-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero card" aria-labelledby="hero-heading">
+      <div class="container">
+        <h2 id="hero-heading" class="reveal">NAJIB <span class="accent">ADEM</span> (Tyreub)</h2>
+        <p class="lead reveal">Technicien Systèmes et Réseaux — En recherche d'alternance<br><strong>Poste :</strong> Technicien SUPPORT informatique — Disponible : Dès Septembre 2025</p>
+        <div class="small reveal contact-quick">
+          <div>☎ 06.68.45.71.51</div>
+          <div>✉ <a class="contact-link" href="mailto:najijbadem45@gmail.com">najijbadem45@gmail.com</a></div>
+          <div>📍 18 Avenue Charles Garcia, 94120 Fontenay-sous-Bois</div>
+          <div>Permis : B</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container card" aria-labelledby="about-title">
+      <h3 id="about-title" class="section-title reveal">À propos</h3>
+      <p class="reveal">Technicien Systèmes et Réseaux en formation (BTS SIO). Expériences en support, administration et supervision réseau. Je cherche une alternance pour consolider mes compétences pratiques en entreprise dès septembre 2025.</p>
+      <p class="reveal"><strong>Résumé :</strong> Installation et configuration de postes, gestion d'infrastructures réseau (VLAN, câblage), supervision (SNMP), support utilisateurs (niveaux 1 & 2), virtualisation (Proxmox, VMware) et bases de données (MySQL, MongoDB).</p>
+    </section>
+
+    <section id="skills" class="skills container card" aria-labelledby="skills-title">
+      <h3 id="skills-title" class="section-title reveal">Compétences</h3>
+      <div class="skill-list">
+        <!-- Ordered by descending proficiency -->
+        <div class="skill reveal">
+          <div class="skill-row">
+            <span class="skill-name">Virtualisation / Conteneurs : Proxmox, Docker, VMware</span>
+            <span class="skill-percent" data-target="96">0%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" data-percent="96"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill-row">
+            <span class="skill-name">Systèmes : Windows, Linux (Ubuntu, Debian)</span>
+            <span class="skill-percent" data-target="95">0%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" data-percent="95"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill-row">
+            <span class="skill-name">Bases de données : MySQL, MariaDB, MongoDB</span>
+            <span class="skill-percent" data-target="95">0%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" data-percent="95"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill-row">
+            <span class="skill-name">Sécurité : pare-feux, VPN, bonnes pratiques</span>
+            <span class="skill-percent" data-target="90">0%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" data-percent="90"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill-row">
+            <span class="skill-name">Langages : HTML, CSS</span>
+            <span class="skill-percent" data-target="87">0%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" data-percent="87"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill-row">
+            <span class="skill-name">Réseaux : TCP/IP, VLAN, VoIP, notions Cisco</span>
+            <span class="skill-percent" data-target="76">0%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" data-percent="76"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education container card" aria-labelledby="education-title">
+      <h3 id="education-title" class="section-title reveal">Études & Formations</h3>
+      <ul class="reveal">
+        <li><strong>BTS Services Informatiques aux Organisations (SIO)</strong> — Rythme : 3j entreprise / 2j formation (Recherche d'alternance)</li>
+        <li><strong>Baccalauréat Technologique</strong>, Lycée Polyvalent Louis Armand (2020 - 2023)</li>
+        <li><strong>Brevet d'Aptitude aux Fonctions d'Animateur</strong>, AFOCAL (2023)</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="projects container card" aria-labelledby="projects-title">
+      <h3 id="projects-title" class="section-title reveal">Expériences</h3>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <h4>Stage DSI — Mairie de Villeneuve-Saint-Georges</h4>
+          <p><em>24/05/2025 - 04/07/2025</em></p>
+          <ul>
+            <li>Installation et configuration de postes Windows</li>
+            <li>Gestion de l'infrastructure réseau (raccordement, câblage, VLAN)</li>
+            <li>Supervision avec LibreNMS (SNMP) : détection, sondes, analyse de trafic</li>
+            <li>Assistance utilisateurs, résolution incidents niveaux 1 & 2</li>
+          </ul>
+        </article>
+        <article class="project-card reveal">
+          <h4>Animateur — Ville de Fontenay-sous-Bois</h4>
+          <p><em>CDD · 2024</em></p>
+          <p>Encadrement d'enfants en colonie de ski, sécurité et apprentissage.</p>
+        </article>
+        <article class="project-card reveal">
+          <h4>Agent technique — Ville de Fontenay-sous-Bois</h4>
+          <p><em>CDD · 2023</em></p>
+          <p>Entretien, maintenance et résolution de problèmes techniques.</p>
+        </article>
+        <article class="project-card reveal">
+          <h4>Stagiaire — Société Générale</h4>
+          <p><em>CDD · 2020</em></p>
+          <p>Stage d'observation en IT, découverte du milieu bancaire.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container card" aria-labelledby="contact-title">
+      <h3 id="contact-title" class="section-title reveal">Contact</h3>
+      <div class="reveal contact-block">
+        <p><strong>A N</strong></p>
+        <p>Najib Adem</p>
+        <p>☎ 06.68.45.71.51</p>
+        <p>✉ <a class="contact-link" href="mailto:najijbadem45@gmail.com">najijbadem45@gmail.com</a></p>
+        <p>📍 18 Avenue Charles Garcia, 94120 Fontenay-sous-Bois</p>
+        <p>Permis B</p>
+        <p class="reveal">
+          <a id="btn-download" class="btn-download" href="./Najib Adem CV.pdf" download>⬇ Télécharger mon CV (PDF)</a>
+        </p>
+        <p class="small" id="cv-status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tyreub — Étudiant BTS SIO • En recherche d'alternance</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
